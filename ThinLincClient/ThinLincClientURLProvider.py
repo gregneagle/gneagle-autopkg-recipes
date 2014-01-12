@@ -31,7 +31,7 @@ BASE_URL = "http://www.cendio.com/downloads/clients/"
 re_dmg_link = re.compile(r'href="(?P<url>tl-[._0-9]*-client-osx\.iso)"')
 
 
-class ThinLincURLProvider(Processor):
+class ThinLincClientURLProvider(Processor):
     """Provides a download URL for ThinLinc OS X client."""
     input_variables = {
         "base_url": {
